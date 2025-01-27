@@ -1,6 +1,6 @@
 a=input()
 
-if a==a[::-1]:
+if a[::-1]==a:
     print(1)
 else:
     print(0)
