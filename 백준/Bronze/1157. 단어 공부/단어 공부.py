@@ -8,13 +8,15 @@ for i in a:
         dic[i]+=1
 
 value_max=max(dic.values())
-value=[]
+list=[]
 
-for key,vv in dic.items():
-    if value_max==vv:
-        value.append(key)
+for key, value in dic.items():
+    if value==value_max:
+        list.append(key)
 
-if len(value)>1:
+if len(list)>1:
     print("?")
 else:
-    print(value[0])
+    print(list[0])
+        
+    
