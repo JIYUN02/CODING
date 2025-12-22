@@ -1,10 +1,5 @@
 for i in range(3):
-    li = []
-    a,b,c,d = map(int,input().split())
-    li.append(a)
-    li.append(b)
-    li.append(c)
-    li.append(d)
+    li = list(map(int,input().split()))
     if li.count(0) == 1:
         print("A")
     elif li.count(0) == 2:
