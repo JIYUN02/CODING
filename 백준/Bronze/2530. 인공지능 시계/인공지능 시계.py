@@ -6,6 +6,10 @@ time = time % (24 * 3600)
 h = time // 3600
 time = time % 3600
 m = time // 60
-s = time % 60
+time %= 60
+s = time
 
 print(h,m,s)
+
+
+
