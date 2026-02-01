@@ -7,11 +7,8 @@ for i in range(N):
 
     count = []
     for j in range(len(re)-1):
-        if j == len(re):
-            break
-        else:
-            gap = abs(re[j]-re[j+1])
-            count.append(gap)
+        gap = abs(re[j]-re[j+1])
+        count.append(gap)
 
     print(f'Class {i+1}')
     print(f'Max {re[0]}, Min {re[-1]}, Largest gap {max(count)}')
