@@ -1,23 +1,22 @@
 M = int(input())
 N = int(input())
-result = []
-sum = 0
-min = 0
+
+total = 0
+minimum = 0
 
 for i in range(1, 101):
-    result.append(i*i)
-
-for j in result:
-    if M <= j <= N:
-        sum += j
-
-for k in result:
-    if M <= k <= N:
-        min += k
+    square = i * i
+    
+    if square > N:
         break
 
-if sum and min > 0:
-    print(sum)
-    print(min)
+    if square >= M:
+        total += square
+        if minimum == 0:
+            minimum = square
+
+if total > 0:
+    print(total)
+    print(minimum)
 else:
     print(-1)
