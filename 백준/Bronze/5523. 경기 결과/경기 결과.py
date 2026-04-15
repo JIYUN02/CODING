@@ -1,3 +1,5 @@
+import sys
+input = sys.stdin.readline
 round = int(input())
 a_score, b_score = 0, 0
 
